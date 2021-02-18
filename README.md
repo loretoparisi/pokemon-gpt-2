@@ -48,3 +48,13 @@ To use this, make a folder named "checkpoint" and place the unzipped pokemon-gpt
 ## Thanks !
 
 Big thanks to the [GPT-2-Simple](https://github.com/minimaxir/gpt-2-simple) project by Max Woolf. I wouldn't have done any of this if that project hadn't made GPT-2 work so straight forward.
+
+## Docker Build
+```
+docker build -f Dockerfile -t pokemongpt2 .
+```
+
+## Docker Run
+```
+docker run -v $(pwd):/app --rm -it pokemongpt2
+```
